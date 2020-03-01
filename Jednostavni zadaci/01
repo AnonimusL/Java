@@ -1,0 +1,29 @@
+/**
+* Napraviti metodu proveri(), sa parametrom int number koja ce proveravati
+* da li je unesen broj pozitivan, negativan ili jednak 0.
+*/
+
+package Paket;
+
+import java.util.Scanner; 
+
+public class Main {
+	public static void main(String[] args)
+	{	
+		Scanner sc=new Scanner(System.in);
+		
+		int number=sc.nextInt();
+		
+		proveri(number);
+		sc.close();
+		
+	}
+
+	public static void proveri(int number)
+	{
+		if(number>0) System.out.println("Broj je pozitivan");
+		else if(number<0) System.out.println("Broj je negativan");
+		else System.out.println("Broj je jednak 0");
+		
+	}
+}
