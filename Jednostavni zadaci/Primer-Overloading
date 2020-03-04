@@ -1,0 +1,49 @@
+/**
+* Dve metode:
+* 1. metoda (racunaj): Konvertovanje feet to cm i inch to cm, prosledjujemo dva parametra, 
+* ukoliko su veci od nule racunamo, u suprotnom vracamo  -1;
+* 2. metoda (racunaj): Konvertuje inch to feet, prosledjujemo jedan parametar,
+* ukoliko je on veci 0 racunamo, u suprotnom vracamo -1;
+*/
+
+package paket;
+
+public class Main {
+	public static void main(String[] args)
+	{	
+		int feet=9;
+		int inch=3;
+		// isti naziv metoda, ali sa razlicitim brojem parametara
+    racunaj(feet,inch);
+		racunaj(inch);
+	}
+	
+	public static int racunaj(double feet, double inch)
+	{
+		if(feet>0) 
+		{
+			System.out.println("Feet to cm "+feet*30.48);
+		}
+		if(inch>0)
+		{
+			System.out.println("Inch to cm "+inch*2.54);
+		}
+		if(feet<=0 && inch<=0)
+			return -1;
+		
+		return 1;
+	}
+  
+	public static int racunaj(double inch)
+	{
+		if(inch>0)
+		{
+			System.out.println("Inch to feet "+inch/12);
+		}
+		if(inch<=0)
+			return -1;
+		
+		return 1;
+	}
+	
+}
