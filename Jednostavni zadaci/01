@@ -3,7 +3,7 @@
 * da li je unesen broj pozitivan, negativan ili jednak 0.
 */
 
-package Paket;
+package paket;
 
 import java.util.Scanner; 
 
